@@ -19,6 +19,9 @@ A collection of [OpenCode](https://opencode.ai) skills for EPICS (Experimental P
 | `asyn-gpib` | Write GPIB/SCPI device support using the devGpib framework -- gpibCmd command tables, DSET macros, EFAST tables, and custom conversions |
 | `motor-driver` | Write model-3 asyn motor drivers -- asynMotorController and asynMotorAxis subclasses with move, home, stop, poll, status bits, and convenience I/O |
 | `motor-ioc` | Configure and deploy motor IOCs -- database templates, substitution files, motor record fields, st.cmd startup, motorUtil, and driver submodule integration |
+| `areadetector-driver` | Write areaDetector camera/detector drivers -- ADDriver subclasses, NDArray allocation and lifecycle, acquisition thread patterns, image modes, and shutter control |
+| `areadetector-ioc` | Configure and deploy areaDetector IOCs -- plugin chain configuration, database templates, commonPlugins.cmd, file writing patterns, and build configuration |
+| `areadetector-plugin` | Write custom areaDetector plugins -- NDPluginDriver processing plugins and NDPluginFile file writer plugins with processCallbacks and NDArray handling |
 
 ## Installation
 
@@ -67,4 +70,4 @@ rm -rf /tmp/opencode-skills
 
 ## Sources
 
-These skills were derived from analysis of the [EPICS base 7.0](https://github.com/epics-base/epics-base), [asyn 4.45](https://github.com/epics-modules/asyn), [motor R7](https://github.com/epics-modules/motor), and [StreamDevice 2.8.25+](https://github.com/paulscherrerinstitute/StreamDevice) source code and [documentation](https://paulscherrerinstitute.github.io/StreamDevice/), including record type definitions, build system templates, device support headers, CA/PVA client APIs, libCom headers, asynPortDriver class, asyn device support, devGpib framework, asynMotorController/asynMotorAxis base classes, motor record fields, StreamDevice protocol syntax and format converters, and example programs.
+These skills were derived from analysis of the [EPICS base 7.0](https://github.com/epics-base/epics-base), [asyn 4.45](https://github.com/epics-modules/asyn), [motor R7](https://github.com/epics-modules/motor), [areaDetector R3](https://github.com/areaDetector/areaDetector), and [StreamDevice 2.8.25+](https://github.com/paulscherrerinstitute/StreamDevice) source code and [documentation](https://paulscherrerinstitute.github.io/StreamDevice/), including record type definitions, build system templates, device support headers, CA/PVA client APIs, libCom headers, asynPortDriver class, asyn device support, devGpib framework, asynMotorController/asynMotorAxis base classes, motor record fields, ADDriver/NDPluginDriver/NDPluginFile base classes, NDArray lifecycle, plugin architecture, StreamDevice protocol syntax and format converters, and example programs.
