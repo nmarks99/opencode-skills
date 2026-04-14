@@ -22,6 +22,7 @@ A collection of [OpenCode](https://opencode.ai) skills for EPICS (Experimental P
 | `areadetector-driver` | Write areaDetector camera/detector drivers -- ADDriver subclasses, NDArray allocation and lifecycle, acquisition thread patterns, image modes, and shutter control |
 | `areadetector-ioc` | Configure and deploy areaDetector IOCs -- plugin chain configuration, database templates, commonPlugins.cmd, file writing patterns, and build configuration |
 | `areadetector-plugin` | Write custom areaDetector plugins -- NDPluginDriver processing plugins and NDPluginFile file writer plugins with processCallbacks and NDArray handling |
+| `snl` | Write State Notation Language (SNL) programs (.st/.stt) -- state machines, PV interaction, event flags, built-in functions, safe mode, embedded C code, and build integration |
 
 ## Installation
 
@@ -70,4 +71,4 @@ rm -rf /tmp/opencode-skills
 
 ## Sources
 
-These skills were derived from analysis of the [EPICS base 7.0](https://github.com/epics-base/epics-base), [asyn 4.45](https://github.com/epics-modules/asyn), [motor R7](https://github.com/epics-modules/motor), [areaDetector R3](https://github.com/areaDetector/areaDetector), and [StreamDevice 2.8.25+](https://github.com/paulscherrerinstitute/StreamDevice) source code and [documentation](https://paulscherrerinstitute.github.io/StreamDevice/), including record type definitions, build system templates, device support headers, CA/PVA client APIs, libCom headers, asynPortDriver class, asyn device support, devGpib framework, asynMotorController/asynMotorAxis base classes, motor record fields, ADDriver/NDPluginDriver/NDPluginFile base classes, NDArray lifecycle, plugin architecture, StreamDevice protocol syntax and format converters, and example programs.
+These skills were derived from analysis of the [EPICS base 7.0](https://github.com/epics-base/epics-base), [asyn 4.45](https://github.com/epics-modules/asyn), [motor R7](https://github.com/epics-modules/motor), [areaDetector R3](https://github.com/areaDetector/areaDetector), [sequencer 2.2](https://github.com/epics-modules/sequencer), and [StreamDevice 2.8.25+](https://github.com/paulscherrerinstitute/StreamDevice) source code and [documentation](https://paulscherrerinstitute.github.io/StreamDevice/), including record type definitions, build system templates, device support headers, CA/PVA client APIs, libCom headers, asynPortDriver class, asyn device support, devGpib framework, asynMotorController/asynMotorAxis base classes, motor record fields, ADDriver/NDPluginDriver/NDPluginFile base classes, NDArray lifecycle, plugin architecture, SNL language reference and built-in functions, StreamDevice protocol syntax and format converters, and example programs.
